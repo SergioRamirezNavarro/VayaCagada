@@ -14,7 +14,7 @@
 
 <body>
     <h2 id="textos">¡VAYA KAGADA!</h2>
-    
+
     <div class="navbar">
         <div class="scrollable">
             <div class="frame">
@@ -134,19 +134,30 @@
             <div class="frame">
                 <img src="static/img/descarga20.jpg" alt="Your Image">
                 <div class="description">
-                    <p>LA BUENA MIERDA.</p>
+                    <p>PORNO DE MIERDA.</p>
                 </div>
             </div>
+            <!-- Formulario para agregar nuevos elementos -->
+            <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+                <label for="titulo">Título:</label><br>
+                <input type="text" id="titulo" name="titulo"><br>
+                <label for="imagen">URL de la imagen:</label><br>
+                <input type="text" id="imagen" name="imagen"><br>
+                <label for="descripcion">Descripción:</label><br>
+                <textarea id="descripcion" name="descripcion"></textarea><br>
+                <input type="submit" value="Agregar elemento">
+            </form>
         </div>
     </div>
+
     <hr>
     <h2 id="textos">(PEDO-)FLATOTECA</h2>
-    <hr>
     <!--
     <h3>Post List</h3>
     {% block content %}
     {% endblock %}
     -->
+
 </body>
 
 </html>
